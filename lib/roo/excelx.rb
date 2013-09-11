@@ -43,6 +43,8 @@ class Roo::Excelx < Roo::Base
       format = format.to_s.downcase
       if type = EXCEPTIONAL_FORMATS[format]
         type
+      elsif format.include?('@')
+        :string
       elsif format.include?('#')
         :float
       elsif format.include?('d') || format.include?('y')

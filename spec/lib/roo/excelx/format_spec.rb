@@ -31,7 +31,7 @@ describe Roo::Excelx::Format do
       '[h]:mm:ss' => :time,
       'mmss.0' => :time,
       '##0.0E+0' => :float,
-      '@' => :float,
+      '@' => :string,
       #-- zusaetzliche Formate, die nicht standardmaessig definiert sind:
       "yyyy\\-mm\\-dd" => :date,
       'dd/mm/yy' => :date,
